@@ -115,7 +115,7 @@ Mit csinálsz? h
 
 ## n pakli esetén a ház nyereségégének szimulációja
 
-A szimuláció.py nevű programunk szimulálja a játékot a következő módon: létrehoz egy új paklit, és megkeveri. Oszt két lapot a játékosnak és az osztónak. Majd a játékos dönt a basic stragégia a Hi-Lo-val kiegésíztve alapján. Ha megáll (S) vagy dupláz (D), az osztó jön. Az osztó húz, amíg el nem éri legalább a 17-et. Az eredményt visszaadja a program a következő módon: 1: ha a játékos nyer, -1: ha a játékos veszít és 0: ha döntetlen.
+A szimulacio.py nevű programunk szimulálja a játékot a következő módon: létrehoz egy új paklit, és megkeveri. Oszt két lapot a játékosnak és az osztónak. Majd a játékos dönt a basic stragégia a Hi-Lo-val kiegésíztve alapján. Ha megáll (S) vagy dupláz (D), az osztó jön. Az osztó húz, amíg el nem éri legalább a 17-et. Az eredményt visszaadja a program a következő módon: 1: ha a játékos nyer, -1: ha a játékos veszít és 0: ha döntetlen.
 Majd ilyen mintára a program lefuttat 100 000 játékot és megszámolja hogy hányszor volt győzelem, vereség és döntetlen. Majd ez alapján kiszámolja az arányokat, és kirajzol egy oszlopdiagramot az eredménnyel.
 
 ![image](https://github.com/user-attachments/assets/f85830ee-3f20-4a80-9afc-52f53e55bbd6)
