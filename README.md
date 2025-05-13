@@ -23,16 +23,34 @@ Több pakli esetén kicsit változtatni kell. Itt nem a running count kell, hane
 
 ## A játék menete
 
-Miután megkaptad a kezdő lapjaidat, 4 lehetőséged van. Hit, stand, double down vagy split. A hit azt jelenti, hogy kérsz még egy lapot, de ha ezzel túlléped a 21-et, akkor vesztettél automatikusan. A stand azt jelenti, hogy nem kérsz több lapot, ezt akkor érdemes, ha nagy értékű lapjaid vannak. A double down az azt jelenti, hogy megduplázod a tétedet, mielőtt kapsz egy új lapot. A split csak akkor opció, ha két ugyanolyan lapot kaptál kezdésnek, ekkor megduplázod a paklijaidat és ezentúl két "kézzel" játszol, ekkor a tétet is megduplázod.
-
-A "v_2" fáljban lévő program, egy Blackjack szimuláció, amit úgy írtunk meg, hogy közben a Hi-Lo módszerrel számolja a kártyákat. A program a játék elején felajánlja, hogy a játékos válasszon, hány paklival szeretne játszani.
+A programunk először megkérdezi, hogy hány paklival szeretnénk játszani, a következő módon. A játékos 1-től 8-ig választhat. 
+Majd a választás után a játék kiírja, hogy az adott játékban hány chippel kezdünk. Az első játék elején 100 chippünk van, majd a további játékokban, az adott egyenlegünket írja ki. Ezek mellett elindul a Hi-Lo számláló, kiírja a kezdő értéket, majd minden körben frissíti. 
 
 ```
-Hány paklival szeretnél játszani? (1-8): 4
-4 paklival játszol, összesen 208 kártya.
+Hány paklival szeretnél játszani? (1-8): 3
+3 paklival játszol, összesen 156 kártya.
 100 chippel kezdessz.
 Hi-Lo kártyaszámolás bekapcsolva. Kezdő érték: 0
 ```
+
+```
+```
+Hány paklival szeretnél játszani? (1-8): 3
+3 paklival játszol, összesen 156 kártya.
+100 chippel kezdessz.
+Hi-Lo kártyaszámolás bekapcsolva. Kezdő érték: 0
+``````
+Hány paklival szeretnél játszani? (1-8): 3
+3 paklival játszol, összesen 156 kártya.
+100 chippel kezdessz.
+Hi-Lo kártyaszámolás bekapcsolva. Kezdő érték: 0
+``````Hány paklival szeretnél játszani? (1-8): 33 paklival játszol, összesen 156 kártya.100 chippel kezdessz.Hi-Lo kártyaszámolás bekapcsolva. Kezdő érték: 0```
+
+Miután megkaptad a kezdő lapjaidat, 4 lehetőséged van. Hit, stand, double down vagy split. A hit azt jelenti, hogy kérsz még egy lapot, de ha ezzel túlléped a 21-et, akkor vesztettél automatikusan. A stand azt jelenti, hogy nem kérsz több lapot, ezt akkor érdemes, ha nagy értékű lapjaid vannak. A double down az azt jelenti, hogy megduplázod a tétedet, mielőtt kapsz egy új lapot. A split csak akkor opció, ha két ugyanolyan lapot kaptál kezdésnek, ekkor megduplázod a paklijaidat és ezentúl két "kézzel" játszol, ekkor a tétet is megduplázod.
+
+A "v_8" fáljban lévő program, egy Blackjack szimuláció, amit úgy írtunk meg, hogy közben a Hi-Lo módszerrel számolja a kártyákat. A program a játék elején felajánlja, hogy a játékos válasszon, hány paklival szeretne játszani.
+
+
 
 A paklik összekeverve indulnak, és automatikusan újrakeverődnek, ha túl kevés lap marad (15 alatt), pont úgy, mint a valódi kaszinókban, mielőtt visszakevernének. 
 A játék közben minden körben a program felajánl 3 (vagy 4, ha kettő ugyanolyat kapsz) lehetőséget: hit, stand, double down(vagy split). Ezek mellett minden kör elején kiírja az aktuális true count-ot is. Ez alapján a játékos könnyebben eldöntheti hogy kér e még lapot vagy sem.
@@ -52,14 +70,21 @@ Mit csinálsz?
 Abban az esetben ha az elején kettő ugyanolyan lapot kapsz, akkor meg van az a lehetőség, hogy szétválaszd a paklidat, és innentől kezdve két paklival játssz tovább:
 
 ```
-Van 41.5 chipped.
-Hi-Lo számláló: 1 (True count: 0.21)
-Mennyit tennél fel? 1
-Hi-Lo számláló: -2 (True count: -0.44)
-Játékos keze: Pick Jumbó, Kör Jumbó,
-Érték: 20
-Dealer (látható) keze: Káró Király,
+Hány paklival szeretnél játszani? (1-8): 3
+3 paklival játszol, összesen 156 kártya.
+100 chippel kezdessz.
+Hi-Lo kártyaszámolás bekapcsolva. Kezdő érték: 0
+
+Van 100 chipped.
+Hi-Lo számláló: 0 (True count: 0)
+Mennyit tennél fel? 10
+Hi-Lo számláló: 0 (True count: 0.0)
+Tét ajánlás: Alap tét rendben van
+Játékos keze: Treff 7, Pick 4,
+Érték: 11
+Dealer (látható) keze: Kör Jumbó,
 Érték: 10
-Rendelkezésre álló opciók: [H]it / [S]tand / [D]ouble down / S[P]lit
-Mit csinálsz? P
+Stratégia ajánlás: Double Down (Dupla tét)
+Rendelkezésre álló opciók: [H]it / [S]tand / [D]ouble down
+Mit csinálsz?
 ´´´
