@@ -23,6 +23,8 @@ Több pakli esetén kicsit változtatni kell. Itt nem a running count kell, hane
 
 ## Basic strategy
 ![image](https://github.com/user-attachments/assets/eac6811f-8c02-466e-9031-85312f6c3108)
+![image](https://github.com/user-attachments/assets/5aca9ed2-2930-4f94-ab5b-5d12644c9fcf)
+
 
 
 
@@ -119,3 +121,4 @@ A szimulacio.py nevű programunk szimulálja a játékot a következő módon: l
 Majd ilyen mintára a program lefuttat 100 000 játékot és megszámolja hogy hányszor volt győzelem, vereség és döntetlen. Majd ez alapján kiszámolja az arányokat, és kirajzol egy oszlopdiagramot az eredménnyel.
 
 ![image](https://github.com/user-attachments/assets/f85830ee-3f20-4a80-9afc-52f53e55bbd6)
+
